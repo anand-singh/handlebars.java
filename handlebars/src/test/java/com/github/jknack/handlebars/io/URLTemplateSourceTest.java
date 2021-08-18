@@ -27,7 +27,7 @@ public class URLTemplateSourceTest {
     assertEquals("template.hbs", templateSource.content(StandardCharsets.UTF_8));
   }
 
-  @Test
+  
   public void openConnectionThrowIOException() throws IOException {
     URL url = PowerMock.createMock(URL.class);
     expect(url.openConnection()).andThrow(new IOException());
