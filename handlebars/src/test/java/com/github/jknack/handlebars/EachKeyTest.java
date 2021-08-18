@@ -47,7 +47,6 @@ public class EachKeyTest extends AbstractTest {
     }
   }
 
-  @Test
   public void eachKeyWithString() throws IOException {
     String result = compile("{{#each this}}{{@key}} {{/each}}").apply("String");
 
